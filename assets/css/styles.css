@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    padding: 2.5rem;
+}
+
+body {
+    min-height: 100;
+    line-height: 1;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 100%;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
