@@ -45,9 +45,16 @@ header {
 }
 
 main {
-    height: calc(100vh-6rem);
+    /* height: calc(100vh-6rem); */
     display: flex;
     border-top: double 0.8rem;
-    justify-items: center;
-    align-items: stretch;
+    justify-content: center;
+    /* align-items: stretch; */
 }
+/* 
+.hero {
+    width: 90%;
+    height: 80%;
+    border: 2px solid black;
+    margin-left: 25px;   
+} */
