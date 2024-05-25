@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+/* :root { 
+    --circle-color: #ffb100;
+    --light-theme: #fff;
+    --light-accent: #f9f9fb;
+    --dark-accent: #222;
+    --dark-theme: #000;
+
+} */
+
 header,
 footer {
     padding: 2.5rem;
@@ -26,3 +35,20 @@ header {
     justify-content: space-between;
 }
 
+.toggle{
+    font-size: 1.45rem;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    height: calc(100vh-6rem);
+    display: flex;
+    border-top: double 0.8rem;
+    justify-items: center;
+    align-items: stretch;
+}
+}
