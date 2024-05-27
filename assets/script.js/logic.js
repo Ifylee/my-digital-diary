@@ -34,3 +34,23 @@ const applyMode = function(mode) {
 const saveMode = function(mode) {
     localStorage.setItem("mode", mode);
 }
+
+const handleTheme = function() {
+    const mode = readingMode();
+    
+    let newMode;
+
+    if(mode === "light") {
+      newMode = "dark";
+    } else {
+        newMode = "light";
+    }
+
+    applyMode(newMode);
+    saveMode(newMode);
+};
+
+applyMode(readingMode());
+
+themeButton.addEventListener("click", handleTheme);
+
