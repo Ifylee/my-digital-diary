@@ -6,7 +6,7 @@ aside {
     border-radius: 100%;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    margin: 50px;
  } 
 
 
@@ -52,6 +52,13 @@ section {
     justify-content: center;
 }
 
-/* form > *:not(label) {
-    margin: 1rem 0;
-} */
+.dark section {
+    border-left: solid 5rem #ff0022;
+}
+
+#error{
+    color: blue;
+    opacity:  .75;
+    position: absolute;
+    bottom: -2rem;
+}

@@ -59,7 +59,7 @@ header {
 }
 
 main {
-    height: calc(100vh-6rem); 
+    height: 700px; 
     display: flex;
     border-top: double 1rem;
     justify-content: center;
