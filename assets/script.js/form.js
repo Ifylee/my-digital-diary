@@ -1,10 +1,17 @@
 const formElement = document.querySelector("form");
 
 const redirectPage = function() {
-    location.href="./blog.html";
+    location.href = "./blog.html";
 }
 
+const storeBlogDataLocalStorage = function(data) {
+    const blogs = readBlogDataFromLocalStorage();
 
+    blogs.push(data);
+
+    const stringData = JSON.stringify(blogs);
+    localStorage.setItem("blogs", stringData);
+};
 
 const handleFormSubmit = function(event) {
     event.preventDefault();

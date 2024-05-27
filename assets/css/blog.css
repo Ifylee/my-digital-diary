@@ -1,7 +1,44 @@
-/* main {
-    /* flex-direction: column;
+ a {
+    text-decoration: none;
+ }
+ 
+article {
+    flex: 1 1 50%;
+    border: 2px solid;
+    border-radius: : 4px;
+    padding: 1rem;
+    position: relative;
+}
+
+article blockquote {
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+article h2 {
+    text-align: capitalize;
+    border-bottom: thin solid;
+}
+
+footer {
+    position: fixed;
+    inset: 0;
+    top: calc 100vh - 12rem;
+}
+
+li {
+    margin: 1rem;
+}
+
+ main {
+    /flex-direction: column;
     padding: 1rem;
     gap: 1rem;
     height: calc(100vh-18rem);
     overflow-y: scroll;
-} */
+    justi
+ }
+
+ ul {
+    list-style: none;
+ }
