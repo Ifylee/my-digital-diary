@@ -12,4 +12,17 @@ const readBlogDataFromLocalStorage = function() {
     const data = JSON.parse(stringData);
 
     return data || [];
-}
+};
+
+const applyMode = function(mode) {
+    let icon, circleColor;
+
+    if(mode === "light") {
+        icon = "☀️"; 
+        circleColor = "#ffb100";
+
+    } else {
+    icon = "🌙";
+    circleColor = "#8570a5";
+    }
+} 
