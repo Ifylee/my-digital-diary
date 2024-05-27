@@ -25,4 +25,12 @@ const applyMode = function(mode) {
     icon = "🌙";
     circleColor = "#8570a5";
     }
+
+    themeButton.textContent = icon;
+    document.body.classList = mode;
+    document.documentElement.style.setProperty("#ffb100", circleColor);
 } 
+
+const saveMode = function(mode) {
+    localStorage.setItem("mode", mode);
+}
