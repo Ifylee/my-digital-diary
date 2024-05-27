@@ -61,7 +61,7 @@ header {
 main {
     height: calc(100vh-6rem); 
     display: flex;
-    border-top: double 0.8rem;
+    border-top: double 1rem;
     justify-content: center;
     align-items: stretch;
 }
@@ -79,5 +79,5 @@ main {
 
     .light header, .light footer {
         background-color: rgb(205, 199, 199);
-        color: 
+        color: rgb(51, 50, 50);
     }
