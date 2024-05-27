@@ -15,7 +15,7 @@ aside, section {
 }
 
 aside > h2 {
-    font-size: 1.5rem;
+    font-size: 4rem;
     color: white;
 }
 
@@ -53,11 +53,11 @@ section {
 }
 
 .dark section {
-    border-left: solid 5rem #ff0022;
+    border-left: solid 5rem #f9f9fb;
 }
 
 #error{
-    color: blue;
+    color: rgb(19, 19, 151);
     opacity:  .75;
     position: absolute;
     bottom: -2rem;

@@ -28,7 +28,7 @@ const applyMode = function(mode) {
 
     themeButton.textContent = icon;
     document.body.classList = mode;
-    document.documentElement.style.setProperty("#ffb100", circleColor);
+    document.documentElement.style.setProperty("circleColor", circleColor);
 } 
 
 const saveMode = function(mode) {
