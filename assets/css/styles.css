@@ -4,18 +4,6 @@
     box-sizing: border-box;
 }
 
-:root { 
-    --circle-color: #ffb100;
-    --light-theme: #fff;
-    --light-accent: #f9f9fb;
-    --dark-accent: #222;
-    --dark-theme: #000;
-    --dark-accent-action: #111;
-    --action: #563d7c;
-    --action-accent:#8570a5;
-    --disabled: #ff0022;
-} 
-
 html {
     height: 100%;
 }
@@ -24,9 +12,13 @@ html {
     transition: background-color ease-in .5s;
 }
 
-header,
+header {
+    padding: 2.5rem;
+}
+
 footer {
     padding: 2.5rem;
+    align-items: flex-end;
 }
 
 body {
@@ -49,7 +41,7 @@ header {
     justify-content: space-between;
 }
 
-.toggle{
+.toggle {
     font-size: 1.45rem;
     margin: 0;
     padding: 0;
@@ -59,7 +51,7 @@ header {
 }
 
 main {
-    height: 700px; 
+    height: 100vh; 
     display: flex;
     border-top: double 1rem;
     justify-content: center;

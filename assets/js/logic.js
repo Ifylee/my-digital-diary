@@ -1,13 +1,13 @@
 const themeButton = document.querySelector(".toggle");
 
-function readingMode() {
+const readingMode = function() {
     const mode = localStorage.getItem("mode") || "dark";
 
     return mode;
 };
 
 const readBlogDataFromLocalStorage = function() {
-    const stringData = localStorage.getItem("blog");
+    const stringData = localStorage.getItem("blogs");
 
     const data = JSON.parse(stringData);
 
@@ -28,7 +28,7 @@ const applyMode = function(mode) {
 
     themeButton.textContent = icon;
     document.body.classList = mode;
-    document.documentElement.style.setProperty("circleColor", circleColor);
+    document.documentElement.style.setProperty("#ffb100", circleColor);
 } 
 
 const saveMode = function(mode) {
@@ -36,7 +36,7 @@ const saveMode = function(mode) {
 }
 
 const handleTheme = function() {
-    const mode = readingMode();
+       const mode = readingMode();
     
     let newMode;
 
@@ -47,6 +47,7 @@ const handleTheme = function() {
     }
 
     applyMode(newMode);
+    
     saveMode(newMode);
 };
 

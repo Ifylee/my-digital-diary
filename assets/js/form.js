@@ -10,6 +10,7 @@ const storeBlogDataLocalStorage = function(data) {
     blogs.push(data);
 
     const stringData = JSON.stringify(blogs);
+    
     localStorage.setItem("blogs", stringData);
 };
 
@@ -28,7 +29,7 @@ const handleFormSubmit = function(event) {
         errorElement.textContent = "Please fill in all the fields";
 
         setTimeout(() => {
-            errorElement.textContent = "";
+            errorElement.textContent = " ";
         }, 3000);
 
         return;
@@ -44,5 +45,8 @@ const handleFormSubmit = function(event) {
         console.log(formData);
         
         storeBlogDataLocalStorage(formData);
+
         redirectPage();
 }
+
+        formElement.addEventListener("submit", handleFormSubmit)
