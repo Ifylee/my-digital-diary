@@ -20,11 +20,11 @@ article h2 {
     border-bottom: thin solid;
 }
 
-footer {
+/* footer {
     position: fixed;
     inset: 0;
-    top: calc 100vh - 12rem;
-}
+    /* top: calc 100vh - 12rem; 
+} */
 
 li {
     margin: 1rem;
@@ -34,7 +34,7 @@ li {
     flex-direction: column;
     padding: 1rem;
     gap: 1rem;
-    height: calc(100vh - 18rem);
+    height: 100vh;
     overflow-y: scroll;
     justify-content: flex-start;
  }
