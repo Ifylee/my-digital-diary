@@ -12,13 +12,9 @@ html {
     transition: background-color ease-in .5s;
 }
 
-header {
-    padding: 2.5rem;
-}
-
+header,
 footer {
-    padding: 2.5rem;
-    align-items: flex-end;
+    padding: 2rem;
 }
 
 body {
@@ -57,19 +53,22 @@ main {
     height: 100vh; 
     display: flex;
     border-top: double 1rem;
+    /* border-bottom: double 1rem; */
+    margin-right: 10px;
+    margin-left: 10px;
     justify-content: center;
     align-items: stretch;
 }
 
     .dark header, .dark footer {
         background-color: rgb(19, 18, 18) ;
-        color: rgb(205, 199, 199);
+        color: white;
     } 
 
     .dark main {
         background-color: rgb(19, 18, 18);
         color: rgb(205, 199, 199);
-        border-top: solid 1rem #f9f9fb;
+        border-top: solid 1rem white;
     }
 
     .light header, .light footer {
