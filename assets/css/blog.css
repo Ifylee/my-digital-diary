@@ -20,12 +20,6 @@ article h2 {
     border-bottom: thin solid;
 }
 
-/* footer {
-    position: fixed;
-    inset: 0;
-    /* top: calc 100vh - 12rem; 
-} */
-
 li {
     margin: 1rem;
 }
@@ -56,4 +50,8 @@ li {
     border: groove black;
     background-color: black;
     color: white;
+ }
+
+ footer {
+   border-top: double 1rem;
  }

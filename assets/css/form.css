@@ -24,6 +24,11 @@ form {
     position: relative;
 }
 
+#submit {
+   background-color: black;
+   color: white;
+}
+
 form > input, form > textarea {
     margin: 1rem 0;
     padding: 0.5rem;
