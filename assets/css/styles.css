@@ -33,7 +33,6 @@ h6 {
     font-size: 100%;
 }
 
-
 header {
     display: flex;
     flex-flow: row wrap;
@@ -65,6 +64,9 @@ main {
         color: white;
     } 
 
+    .dark footer a {
+        color: white;
+    }
     .dark main {
         background-color: rgb(19, 18, 18);
         color: rgb(205, 199, 199);
@@ -72,6 +74,23 @@ main {
     }
 
     .light header, .light footer {
-        background-color: rgb(205, 199, 199);
+        background-color: white;
         color: rgb(51, 50, 50);
+    }
+
+    .light footer a {
+        color: black;
+    }
+   
+    .light #submit {
+        background-color: black;
+        color: white;
+    }
+
+    .dark #globe {
+        background: linear-gradient(5deg, rgb(59, 57, 59), rgb(109, 92, 92), #eeeae0);
+    }
+
+    .light #globe {
+        background: linear-gradient(5deg, rgb(47, 47, 75), #ffb100, #f5f2f2); 
     }
