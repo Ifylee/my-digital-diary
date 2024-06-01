@@ -1,7 +1,7 @@
  a {
     text-decoration: none;
  }
- 
+ /* article section */
 article {
     flex: 1 1 50%;
     border: 2px solid;
@@ -23,25 +23,27 @@ article h2 {
 header h2 {
    font-size: 3rem;
 }
+/* the overflow here ensures the vertical scrollbar is always present regardless of whether the content actually overflows the element on the y axis */
+main {
+   flex-direction: column;
+   padding: 1rem;
+   gap: 1rem;
+   height: 100vh;
+   overflow-y: scroll;
+   justify-content: flex-start;
+}
 
 li {
     margin: 1rem;
 }
 
- main {
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
-    height: 100vh;
-    overflow-y: scroll;
-    justify-content: flex-start;
- }
+ 
 
  ul li {
     list-style: none;
     margin: 1rem;
  }
-
+/* created a card layout for visual appeal and organization */
  .card {
     flex: 1 1 50%;
     border: 2px solid;
@@ -52,11 +54,11 @@ li {
     padding: 0.5rem;
     border-radius: 4px;
     margin-right: 1rem;
-    border: groove black;
-    background-color: black;
-    color: white;
+    border: groove var(--dark-black);
+    background-color: var( --light-black);
+    color: var(--light-white);
  }
-
+/* footer section */
   footer {
    border-top: double 1rem;
    margin: 0 10px;

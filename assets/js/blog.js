@@ -1,6 +1,6 @@
 const mainElement = document.querySelector("main");
 
-const renderElement = function(type, text,parent) {
+const renderElement = function(type, text, parent) {
     const element = document.createElement("h2");
     element.textContent = "No blogs available yet";
 
