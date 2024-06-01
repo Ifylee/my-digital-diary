@@ -1,5 +1,3 @@
-
-
 aside {
     display: flex;
     border-radius: 100%;
@@ -30,7 +28,7 @@ form > input, form > textarea {
 
 h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem; 
    }
 

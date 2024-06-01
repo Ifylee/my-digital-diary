@@ -49,15 +49,12 @@ header {
 }
 
 main {
-    height: 100vh; 
+    height: 95vh; 
     display: flex;
     border-top: double 1rem;
-    /* border-bottom: double 1rem; */
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 0 10px;
     justify-content: center;
-    align-items: stretch;
-}
+   }
 
     .dark header, .dark footer {
         background-color: rgb(19, 18, 18) ;
@@ -85,6 +82,9 @@ main {
     .light #submit {
         background-color: black;
         color: white;
+    }
+    #globe {
+        height: 82%;
     }
 
     .dark #globe {
