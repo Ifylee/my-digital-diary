@@ -11,7 +11,7 @@ aside, section {
 }
 
 aside > h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: white;
 }
 
@@ -26,10 +26,11 @@ form > input, form > textarea {
     padding: 0.5rem;
 }
 
-h2 {
+ h2 {
+    
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 2rem; 
+    padding: 2px; 
    }
 
 input textarea {
@@ -40,7 +41,7 @@ input textarea {
 }
 
 section {
-    padding: 2rem;
+    padding: 0 3rem;
     display: flex;
     align-items: stretch;
     border-left: double 1rem;

@@ -7,20 +7,38 @@
 html {
     height: 100%;
 }
-
+/* creates a smooth change background effect over 0.5 seconds */
 * {
-    transition: background-color ease-in .5s;
+    transition: background-color ease-in 0.5s;
+}
+
+/* header section */
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 header,
 footer {
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
+/* toggle button with a class of toggle */
+.toggle {
+    font-size: 1.45rem;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* main container */
 body {
-    min-height: 100%;
-    line-height: 1;
-    border: 2px solid black;
+    min-height: 110vh;
+    line-height: 2;
+    border: 1px solid black;
     margin-left: 2px;
 }
 
@@ -33,28 +51,19 @@ h6 {
     font-size: 100%;
 }
 
-header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-.toggle {
-    font-size: 1.45rem;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
 main {
-    height: 95vh; 
+    height: 100vh; 
     display: flex;
     border-top: double 1rem;
     margin: 0 10px;
     justify-content: center;
    }
+/* dark section classes*/
+   .dark main {
+    background-color: rgb(19, 18, 18);
+    color: rgb(205, 199, 199);
+    border-top: solid 1rem white;
+}
 
     .dark header, .dark footer {
         background-color: rgb(19, 18, 18) ;
@@ -64,12 +73,8 @@ main {
     .dark footer a {
         color: white;
     }
-    .dark main {
-        background-color: rgb(19, 18, 18);
-        color: rgb(205, 199, 199);
-        border-top: solid 1rem white;
-    }
-
+ 
+/* light section classes */
     .light header, .light footer {
         background-color: white;
         color: rgb(51, 50, 50);
@@ -83,6 +88,8 @@ main {
         background-color: black;
         color: white;
     }
+
+    /* the sun/moon with an id of globe */
     #globe {
         height: 82%;
     }
