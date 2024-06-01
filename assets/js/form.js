@@ -7,12 +7,17 @@ const redirectPage = function() {
 
 // stores a new blog data to the localStorage
 const storeBlogDataLocalStorage = function(data) {
+
+    // reads existing data from local storage
     const blogs = readBlogDataFromLocalStorage(); 
-   
+
+    // pushes the new data into the blogs array.
     blogs.push(data);
 
+    // converts the updated blogs into a JSON string
     const stringData = JSON.stringify(blogs);
     
+    // stores the JSON string back inthe localStorage with the key "blogs" and the value of stringData.
     localStorage.setItem("blogs", stringData);
 };
 

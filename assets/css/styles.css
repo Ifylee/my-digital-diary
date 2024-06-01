@@ -8,7 +8,7 @@
     --light-black: rgb(54, 53, 53);
     --dark-black: black;
     --light-white: hsl(0, 0%, 100%);
-    --dark-white: rgb(245, 242, 242);
+    --dark-white: rgb(231, 228, 222);
 }
 
 html {
@@ -70,21 +70,21 @@ main {
    .dark main {
     background-color: var(--light-black);
     color: rgb(205, 199, 199);
-    border-top: solid 1rem white;
+    border-top: solid 1rem var(--dark-white);
 }
 
     .dark header, .dark footer {
         background-color: var(--dark-black) ;
-        color: white;
+        color: var(--dark-white);
     } 
 
     .dark footer a {
-        color: white;
+        color: var(--dark-white);
     }
  
 /* light section classes */
     .light header, .light footer {
-        background-color: white;
+        background-color: var(--light-white);
         color: rgb(51, 50, 50);
     }
 
@@ -94,7 +94,7 @@ main {
    
     .light #submit {
         background-color: black;
-        color: white;
+        color: var(--light-white);
     }
 
     /* the sun/moon with an id of globe */
