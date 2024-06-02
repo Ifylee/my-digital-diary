@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* css variables */
 :root {
     --light-black: rgb(54, 53, 53);
     --dark-black: black;
@@ -60,7 +60,7 @@ h6 {
 }
 
 main {
-    height: 100vh; 
+    height: 900px; 
     display: flex;
     border-top: double 1rem;
     margin: 0 10px;
@@ -99,8 +99,8 @@ main {
 
     /* the sun/moon with an id of globe */
     #globe {
-        height: 82%;
-    }
+        height: 85%;
+      }
 
     .dark #globe {
         background: linear-gradient(5deg, rgb(59, 57, 59), rgb(109, 92, 92), #eeeae0);

@@ -4,7 +4,7 @@ aside {
     border-radius: 100%;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    margin: 50px;
  } 
 /* responsive design for screen sizes */
 aside, section {
@@ -24,7 +24,7 @@ form {
 /* form section */
 form > input, form > textarea {
     margin: 1rem 0;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
  h2 {
@@ -41,13 +41,14 @@ input textarea {
     background-color: var(--light-white);
 }
 
-section {
-    padding: 0 3rem;
+section {  
+    padding-left: 2rem;
     display: flex;
     align-items: stretch;
     border-left: double 1rem;
     flex-flow: column wrap;
     justify-content: center;
+    flex-wrap: nowrap;
 }
 
 .dark section {

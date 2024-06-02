@@ -2,7 +2,7 @@ const mainElement = document.querySelector("main");
 
 // this function returns a newly created elements to the DOM.
 // this function takes three parameters: the type of element created, the text content value and the parent of the newly created element.
-const renderElement = function(type, text, parent) {
+const rootElement = function(type, text, parent) {
     const element = document.createElement("h2");
     element.textContent = "No blogs available yet";
 
@@ -18,7 +18,7 @@ const handleEmpty = function(type, text, parent) {
 }
 
 // this function gets the stored blog data
-const renderBlogList = function() {
+const rootBlogList = function() {
     const blogs = readBlogDataFromLocalStorage();
 
 // checks for empty blogs, if trthy then the handleEmpty function is called.
@@ -62,4 +62,4 @@ const renderBlogList = function() {
     }
 }
 
-        renderBlogList();
+        rootBlogList();
