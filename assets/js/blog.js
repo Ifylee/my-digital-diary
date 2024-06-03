@@ -1,4 +1,4 @@
-const mainElement = document.querySelector("main");
+const mainEl = document.querySelector("main");
 
 // this function returns a newly created elements to the DOM.
 // this function takes three parameters: the type of element created, the text content value and the parent of the newly created element.
@@ -6,7 +6,7 @@ const rootElement = function(type, text, parent) {
     const element = document.createElement("h2");
     element.textContent = "No blogs available yet";
 
-    mainElement.appendChild(element);
+    mainEl.appendChild(element);
 
     return element;
 }
@@ -17,9 +17,18 @@ const handleEmpty = function(type, text, parent) {
     parent.appendChild(element);
 }
 
+// targets blog data from the localStorage, parses it from JSON and returns it either as data or empty array if there's nothing inside.
+const dataFromLocalStorage = function() {
+    const stringData = localStorage.getItem("blogs");
+
+    const data = JSON.parse(stringData);
+
+    return data || [];
+};
+
 // this function gets the stored blog data
 const rootBlogList = function() {
-    const blogs = readBlogDataFromLocalStorage();
+    const blogs = dataFromLocalStorage();
 
 // checks for empty blogs, if trthy then the handleEmpty function is called.
     if(blogs.length === 0) {
@@ -58,7 +67,7 @@ const rootBlogList = function() {
         article.classList.add('card');
 
         // parent element
-        mainElement.appendChild(article);    
+        mainEl.appendChild(article);    
     }
 }
 

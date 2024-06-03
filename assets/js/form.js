@@ -1,15 +1,24 @@
-const formElement = document.querySelector("form");
+const formEl = document.querySelector("form");
 
 // redirects user to the blog.html page
 const redirectPage = function() {
     location.href = "./blog.html";
 }
 
+// targets blog data from the localStorage, parses it from JSON and returns it either as data or empty array if there's nothing inside.
+const dataFromLocalStorage = function() {
+    const stringData = localStorage.getItem("blogs");
+
+    const data = JSON.parse(stringData);
+
+    return data || [];
+};
+
 // stores a new blog data to the localStorage
-const storeBlogDataLocalStorage = function(data) {
+const storedDataLocalStorage = function(data) {
 
     // reads existing data from local storage
-    const blogs = readBlogDataFromLocalStorage(); 
+    const blogs = dataFromLocalStorage(); 
 
     // pushes the new data into the blogs array.
     blogs.push(data);
@@ -52,9 +61,9 @@ const handleFormSubmit = function(event) {
 
         };
         // stores the fomData values in the localStorage which is easy to retireve as a result of the storeBlogDataLocalStorage function.
-        storeBlogDataLocalStorage(formData);
+        storedDataLocalStorage(formData);
 
         redirectPage();
 }
 // when the submit button located inside of formElement is clicked, the handleFormSubmit function runs
-        formElement.addEventListener("submit", handleFormSubmit)
+        formEl.addEventListener("submit", handleFormSubmit)

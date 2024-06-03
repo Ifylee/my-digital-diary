@@ -7,15 +7,6 @@ const readingMode = function() {
     return mode;
 };
 
-// targets blog data from the localStorage, parses it from JSON and returns it either as data or empty array if there's nothing inside.
-const readBlogDataFromLocalStorage = function() {
-    const stringData = localStorage.getItem("blogs");
-
-    const data = JSON.parse(stringData);
-
-    return data || [];
-};
-
 // this function sets different icons and colors based on the mode.
 const applyMode = function(mode) {
     let icon, circleColor;
